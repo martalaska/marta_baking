@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title>Your flavor combos</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap">
+        <link rel = "stylesheet" href = "../static/style.css">
+        <link rel = "stylesheet" href = "../static/style_matches.css">
+    </head>
+    <body>
+        <main class = "container">
+            <h1 class = "title_small"><img class = "croissant" style = "opacity: 0" src = "../static/images/croissant.png" alt = "">Marta's Baking Website<img class = "croissant" style = "opacity: 0" src = "../static/images/croissant.png" alt = ""></h1>
+            <!--<h1 class = "title_small">Marta's Baking Website</h1>-->
+            <section>
+                <img class = "lines" src = "../static/images/line1.svg" alt = ""><br>
+                <h2>{{search}}</h2>
+                {% if ing != "No match found" %}
+                <h3>Best pairings:</h3>
+                {% for i in ing %}
+                <form action = "{% url 'matches' %}">
+                    <input type = "hidden" name = "ingredient" value = "{{i}}">
+                    <button class = "flavor_button">{{i}}</button>
+                </form>
+                {% endfor %}
+                <img id = "arrow_2" src = "../static/images/arrow_2.svg" alt = "arrow to further ingredients">
+                <h4 id = "click_further">Click for the further investigation of flavors</h4>
+                <br>
+                <img class = "ice_cream_2" style = "rotate: 30deg" src = "../static/images/ice_cream_2.svg" alt = "">
+                <img class = "ice_cream_2" style = "rotate: 247deg" src = "../static/images/ice_cream_2.svg" alt = "">
+                <img class = "ice_cream_2" style = "rotate: 13deg" src = "../static/images/ice_cream_2.svg" alt = "">
+                <img class = "ice_cream_2" style = "rotate: 289deg" src = "../static/images/ice_cream_2.svg" alt = "">
+                <img class = "ice_cream_2" src = "../static/images/ice_cream_2.svg" alt = "">
+                <img class = "ice_cream_2" style = "rotate: 34deg" src = "../static/images/ice_cream_2.svg" alt = "">
+                <img class = "ice_cream_2" style = "rotate: 191deg" src = "../static/images/ice_cream_2.svg" alt = "">
+                <img class = "ice_cream_2" style = "rotate: 163deg" src = "../static/images/ice_cream_2.svg" alt = "">
+                <img class = "ice_cream_2" style = "rotate: 85deg" src = "../static/images/ice_cream_2.svg" alt = "">
+                <div class = "next_steps">
+                    <div>
+                        <h3>Want to check other flavors?</h3>
+                        <form action = "{% url 'matches' %}">
+                            <input class = "flavor_button input_ing" type="textType" name="ingredient" placeholder="Grapefruit">
+                            <button class = "flavor_button last_submit">Submit</button><br>
+                        </form>
+                    </div>
+                    <div>
+                        <h3>Come back to the home page:</h3>
+                        <form action = "{% url 'home' %}">
+                            <button class = "flavor_button last_submit">Home</button><br>
+                        </form>
+                    </div>
+                </div>
+                {% else %}
+                <h3 id = "no_match">{{ ing }} <img id = "ice_cream_1" src = "../static/images/ice_cream.svg" alt = ""></h3>
+                <div class = "next_steps">
+                    <div>
+                        <h3>Try other flavors:</h3>
+                        <form action = "{% url 'matches' %}">
+                            <input class = "flavor_button input_ing" type="textType" name="ingredient" placeholder="Grapefruit">
+                            <button class = "flavor_button last_submit">Submit</button><br>
+                        </form>
+                    </div>
+                    <div>
+                        <h3>Come back to the home page:</h3>
+                        <form action = "{% url 'home' %}">
+                            <button class = "flavor_button last_submit">Home</button><br>
+                        </form>
+                    </div>
+                </div>
+                {% endif %}<br>
+                <img class = "lines" src = "../static/images/line2.svg" alt = ""><br>
+            </section>
+        </main>
+    </body>
+</html>

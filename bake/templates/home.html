@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title>Baking website</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap">
+        <link rel = "stylesheet" href = "../static/style.css">
+    </head>
+    <body>
+        <main class = "container">
+            <h1 class = "title_small"><img class = "croissant" style = "opacity: 0" src = "../static/images/croissant.png" alt = "">Marta's Baking Website<img class = "croissant" style = "opacity: 0" src = "../static/images/croissant.png" alt = ""></h1>
+            <h2 id = "question" style = "opacity: 0">
+                Want to find flavor combinations for your new cool dessert?
+            </h2>
+            <h2 id = "click_here" style = "opacity: 0">
+                CLICK HERE 
+            </h2>
+            <section>
+                <p id = "select_ing">
+                    <div id = "flavor_combos" style = "opacity: 1">
+                        <img class = "lines" src = "../static/images/line1.svg" alt = ""><br>
+                        <h3 class = "homepage">Don't know where to start? Try one of these:</h3>
+                        <form action = "{% url 'matches' %}">
+                            <input type = "hidden" name = "ingredient" value = "Strawberry">
+                            <button class = "flavor_button">Strawberry</button><br>
+                        </form>
+                        <form action = "{% url 'matches' %}">
+                            <input type = "hidden" name = "ingredient" value = "Apricot">
+                            <button class = "flavor_button">Apricot</button><br>
+                        </form>
+                        <form action = "{% url 'matches' %}">
+                            <input type = "hidden" name = "ingredient" value = "Cointerau">
+                            <button class = "flavor_button">Cointerau</button><br>
+                        </form>
+                        <form action = "{% url 'matches' %}">
+                            <input type = "hidden" name = "ingredient" value = "Almond">
+                            <button class = "flavor_button">Almond</button><br>
+                        </form>
+                        <form action = "{% url 'matches' %}">
+                            <input type = "hidden" name = "ingredient" value = "Milk Chocolate">
+                            <button class = "flavor_button">Milk Chocolate</button><br>
+                        </form>
+                        <h3 class = "homepage" id = "second_q">Have a great idea in mind? Start with your first ingredient:</h3>
+                        <form action = "{% url 'matches' %}">
+                            <input class = "flavor_button" id = "input_ing" type="textType" name="ingredient" placeholder="Grapefruit">
+                            <button class = "flavor_button">Submit</button><br>
+                        </form>
+                        <img class = "lines" src = "../static/images/line2.svg" alt = "">
+                    </div>
+                </p>
+            </section>
+        </main>
+    </body>
+</html>

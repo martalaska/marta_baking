@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title>Baking website</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap">
+        <link rel = "stylesheet" href = "../static/style.css">
+    </head>
+    <body>
+        <main class = "container">
+            <h1><img class = "croissant" src = "../static/images/croissant.png" alt = "">Marta's Baking Website<img class = "croissant" src = "../static/images/croissant.png" alt = ""></h1>
+            <section>
+                <h2 id = "question">
+                    Want to find flavor combinations for your new cool dessert?
+                </h2>
+                <h2 id = "click_here">
+                    CLICK HERE 
+                </h2>
+                <div id = "arrow"><img id = "arr" src = "../static/images/arrow.svg" alt = "Arrow pointing to the cake"></div>
+                <p>
+                    <div id = "flavor_combos">
+                        <img class = "lines" src = "../static/images/line1.svg" alt = ""><br>
+                        <h3 class = "homepage">Don't know where to start? Try one of these:</h3>
+                        <form action = "{% url 'matches' %}">
+                            <input type = "hidden" name = "ingredient" value = "Strawberry">
+                            <button class = "flavor_button">Strawberry</button><br>
+                        </form>
+                        <form action = "{% url 'matches' %}">
+                            <input type = "hidden" name = "ingredient" value = "Apricot">
+                            <button class = "flavor_button">Apricot</button><br>
+                        </form>
+                        <form action = "{% url 'matches' %}">
+                            <input type = "hidden" name = "ingredient" value = "Cointerau">
+                            <button class = "flavor_button">Cointerau</button><br>
+                        </form>
+                        <form action = "{% url 'matches' %}">
+                            <input type = "hidden" name = "ingredient" value = "Almond">
+                            <button class = "flavor_button">Almond</button><br>
+                        </form>
+                        <form action = "{% url 'matches' %}">
+                            <input type = "hidden" name = "ingredient" value = "Milk Chocolate">
+                            <button class = "flavor_button">Milk Chocolate</button><br>
+                        </form>
+                        <h3 class = "homepage" id = "second_q">Have a great idea in mind? Start with your first ingredient:</h3>
+                        <form action = "{% url 'matches' %}">
+                            <input class = "flavor_button" id = "input_ing" type="textType" name="ingredient" placeholder="Grapefruit">
+                            <button class = "flavor_button">Submit</button><br>
+                        </form>
+                        <img class = "lines" src = "../static/images/line2.svg" alt = "">
+                    </div>
+                    <button id = "cake_button" type = "button">
+                        <img class = "pieces" id = "piece1" src = "../static/images/piece1.svg" alt = "Piece of cake">
+                        <img class = "pieces" id = "piece2" src = "../static/images/piece2.svg" alt = "Piece of cake">
+                        <img class = "pieces" id = "piece3" src = "../static/images/piece3.svg" alt = "Piece of cake">
+                        <img class = "pieces" id = "piece4" src = "../static/images/piece4.svg" alt = "Piece of cake">
+                        <img class = "pieces" id = "piece5" src = "../static/images/piece5.svg" alt = "Piece of cake">
+                        <img class = "pieces" id = "piece6" src = "../static/images/piece6.svg" alt = "Piece of cake">
+                        <img class = "pieces" id = "piece7" src = "../static/images/piece7.svg" alt = "Piece of cake">
+                        <img class = "pieces" id = "piece8" src = "../static/images/piece8.svg" alt = "Piece of cake">
+                    </button>
+                </p>
+            </section>
+        </main>
+        <script src="../static/script.js"></script> 
+    </body>
+</html>

@@ -1,0 +1,226 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /*grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));*/
+}
+.container {
+    display: grid;
+    text-align: center;
+}
+/*#title {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    align-items: center;
+    transform: translate(35%);
+    transition: all 2s ease-in;
+}*/
+.croissant {
+    /*position: relative;*/
+    width: 4rem;
+    /*margin-left: 1.5rem;
+    margin-right: 1.5rem;*/
+    transition: all 1s ease-in;
+}
+h1 {
+    /*text-shadow: 10px 10px 5px rgba(214, 68, 230, 0.5);*/
+    font-size: 3rem;
+    /*color: #ebb63b;*/
+    color: transparent;
+    background-image: linear-gradient(0deg, #ebb63b, #9733f5);
+    background-clip: text;
+    /*-webkit-background-clip: text;*/
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+    transition: all 2s ease-in;
+}
+/*.title_small {
+    width: 20%;
+    transform: translate(-35%, -20%);
+}*/
+.title_small {
+    font-size: 1.5rem;
+    transform: translate(-39%, -39%);
+    margin-top: 0rem;
+    margin-bottom: -1rem;
+}
+/*.croissant_small {
+    width: 2rem;
+    transform: translate(-35%, -20%);
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+}*/
+h2 {
+    font-family: Annie Use Your Telescope;
+    letter-spacing: 0.05rem;
+}
+#question {
+    transition: all 2s ease-in
+}
+.question_dis {
+    opacity: 0;
+}
+#click_here {
+    font-size: 2rem;
+    color: #9733f5;
+    margin-left: 30%;
+    /*margin-left: 20rem;*/
+    margin-top: -1rem;
+    transition: all 2s ease-in;
+}
+#arr {
+    /*opacity: 0;*/
+    top: 13rem;
+    width: 15rem;
+    position: absolute;
+    margin-left: 11%;
+    margin-top: -2%;
+    /*transform: translate(43%);*/
+    transition: all 0.2s ease-in;
+}
+.pieces {
+    width: 12rem;
+    position: absolute;
+    opacity: 100;
+}
+#piece1 {
+    top: -0.25rem;
+    right: 1.75rem;
+    transition: all 1.5s ease-in;
+}
+#piece2 {
+    top: 3.4rem;
+    right: -0.25rem;
+    transition: all 2.25s ease-in;
+}
+#piece3 {
+    bottom: 1rem;
+    right: -0.5rem;
+    transition: all 1.125s ease-in;
+}
+#piece4 {
+    bottom: -0.5rem;
+    right: 3rem;
+    transition: all 1.875s ease-in;
+}
+#piece5 {
+    bottom: -0.5rem;
+    left: 0.5rem;
+    transition: all 3s ease-in;
+}
+#piece6 {
+    bottom: 3.25rem;
+    left: -1.5rem;
+    transition: all 1.5s ease-in;
+}
+#piece7 {
+    top: 1.85rem;
+    left: -0.85rem;
+    transition: all 1.125s ease-in;
+}
+#piece8 {
+    top: -0.4rem;
+    left: 2.5rem;
+    transition: all 1.875s ease-in;
+}
+.piece1_out {
+    transform: translate(5rem, -6.5rem);
+    opacity: 0;
+}
+.piece2_out {
+    transform: translate(20rem, -3rem);
+    opacity: 0;
+}
+.piece3_out {
+    transform: translate(7rem, 5rem);
+    opacity: 0;
+}
+.piece4_out {
+    transform: translate(4rem, 12rem);
+    opacity: 0;
+}
+.piece5_out {
+    transform: translate(-10rem, 30rem);
+    opacity: 0;
+}
+.piece6_out {
+    transform: translate(-20rem, 3rem);
+    opacity: 0;
+}
+.piece7_out {
+    transform: translate(-5rem, -3rem);
+    opacity: 0;
+}
+.piece8_out {
+    transform: translate(-5rem, -30rem);
+    opacity: 0;
+}
+.click_here_dis, .arr_dis {
+    opacity: 0;
+}
+#cake_button {
+    width: 23rem;
+    height: 23rem;
+    border-radius: 11.5rem;
+    background-color: transparent;
+    border-color: transparent;
+    position: absolute;
+    top: 14rem;
+    transform: translate(-50%);
+    z-index: 1;
+    cursor: pointer;
+}
+.lines {
+    width: 60rem;
+    margin-left: -25%;
+}
+#flavor_combos {
+    line-height: 3rem;
+    opacity: 0;
+    height: 30rem;
+    width: 40rem;
+    margin-left: 50%;
+    transform: translate(-52%);
+    margin-right: auto;
+    margin-top: -7.5rem;
+    /*background-color: #c7dcfc;*/
+    border: lightblue 0.3rem;
+    /*border-style: solid hidden solid hidden;*/
+    text-align: left;
+    transition: all 2s ease-in;
+}
+.homepage {
+    font-family: Annie Use Your Telescope;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-bottom: 0rem;
+    margin-top: -1.5rem;
+    letter-spacing: 0.05rem;
+}
+#second_q {
+    margin-top: 0rem;
+}
+.flavor_button {
+    margin-left: 2rem;
+    background-color: transparent;
+    font-size: 1.1rem;
+    font-family: 'Courier New';
+    letter-spacing: 0.1rem;
+    box-shadow: 3px 3px 1px 1px rgba(216, 24, 24, 0.5);
+    cursor: pointer;
+}
+.flavor_button:hover {
+    box-shadow: 3px 3px 1px 1px rgba(38, 232, 180, 0.5);
+}
+.flavor_button:active {
+    box-shadow: 3px 3px 30px 30px rgba(38, 232, 180, 0.5);
+}
+#input_ing {
+    box-shadow: none;
+}
+#input_ing:focus {
+    box-shadow: 3px 3px 30px 30px rgba(38, 232, 180, 0.5);
+    cursor: auto;
+}

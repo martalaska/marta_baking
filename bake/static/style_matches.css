@@ -1,0 +1,121 @@
+/*.container {
+    display: grid;
+    text-align: center;
+}*/
+/*.croissant {
+    width: 4rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}*/
+section {
+    width: 50rem;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+/*h1 {
+    font-size: 3rem;
+    color: #ebb63b;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+    color: transparent;
+    background-image: linear-gradient(0deg, #ebb63b, #9733f5);
+    background-clip: text;
+}*/
+h2 {
+    display: inline;
+    font-family: Annie Use Your Telescope;
+    letter-spacing: 0.05rem;
+    font-size: 2.5rem;
+    color: #9733f5;
+    border: solid black;
+    border-radius: 4rem 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    box-shadow: 1.5px 1.5px 0.5px 0.5px rgba(216, 24, 24, 0.5);
+    /*width: 3rem;
+    min-height: 4rem;
+    margin-left: 50%;
+    transform: translate(-50%);*/
+}
+h3 {
+    font-family: Annie Use Your Telescope;
+    letter-spacing: 0.05rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+#pairings {
+    font-family: "Courier New";
+}
+.lines {
+    width: 60rem;
+    margin-left: -9%;
+}
+.last_submit {
+    font-size: 1.1rem;
+    box-shadow: 3px 3px 1px 1px rgba(216, 24, 24, 0.5);
+}
+.flavor_button {
+    margin-bottom: 0.8rem;
+    background-color: transparent;
+    font-family: 'Courier New';
+    letter-spacing: 0.1rem;
+    margin-left: 0.8rem;
+    box-shadow: 1.5px 1.5px 0.5px 0.5px rgba(216, 24, 24, 0.5);
+    /*cursor: pointer;*/
+}
+.flavor_button:hover {
+    box-shadow: 1.5px 1.5px 0.5px 0.5px rgba(38, 232, 180, 0.5);
+}
+.flavor_button:active {
+    box-shadow: 1.5px 1.5px 15px 15px rgba(38, 232, 180, 0.5);
+}
+.input_ing {
+    font-size: 1.1rem;
+    box-shadow: none;
+}
+.input_ing:hover {
+    box-shadow: none;
+}
+.input_ing:focus {
+    font-size: 1.1rem;
+    box-shadow: 3px 3px 30px 30px rgba(38, 232, 180, 0.5);
+    cursor: auto;
+}
+form {
+    display: inline;
+}
+#no_match {
+    margin-top: 0rem;
+}
+#ice_cream_1 {
+    width: 5rem;
+    position: relative;
+    top: 1.5rem;
+    left: 1rem;
+}
+.ice_cream_2 {
+    display: inline;
+    width: 1.25rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+#arrow_2 {
+    position: absolute;
+    width: 15rem;
+    top: 6rem;
+    right: 2rem;
+}
+#click_further {
+    font-family: Annie Use Your Telescope;
+    position: absolute;
+    width: 10rem;
+    top: 5rem;
+    right: -6rem;
+    font-size: 1rem;
+    /*background-image: url(../static/images/bkgr.png)*/
+}
+.next_steps {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
