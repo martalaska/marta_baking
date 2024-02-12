@@ -217,10 +217,10 @@ h2 {
 .flavor_button:active {
     box-shadow: 3px 3px 30px 30px rgba(38, 232, 180, 0.5);
 }
-#input_ing {
+.input_ing {
     box-shadow: none;
 }
-#input_ing:focus {
+.input_ing:focus {
     box-shadow: 3px 3px 30px 30px rgba(38, 232, 180, 0.5);
     cursor: auto;
 }
