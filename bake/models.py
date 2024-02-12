@@ -6,7 +6,7 @@ class Ingredients(models.Model):
     title = models.CharField(max_length = 100, default = "Ingredients", primary_key = True)
     #for i in range(20):
     for i in range(40):
-        exec(f"{"pair_"+str(i)} = models.CharField(max_length = 100, default = '', blank = True)")
+        exec(f"{'pair_'+str(i)} = models.CharField(max_length = 100, default = '', blank = True)")
     # image = models.URLField(blank = True)
     # strawberry = models.FloatField()
     # apricot = models.FloatField()
