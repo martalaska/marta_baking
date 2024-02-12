@@ -43,7 +43,7 @@
                         </form>
                         <h3 class = "homepage" id = "second_q">Have a great idea in mind? Start with your first ingredient:</h3>
                         <form action = "{% url 'matches' %}">
-                            <input class = "flavor_button" id = "input_ing" type="textType" name="ingredient" placeholder="Grapefruit">
+                            <input class = "flavor_button input_ing" type="textType" name="ingredient" placeholder="Grapefruit">
                             <button class = "flavor_button">Submit</button><br>
                         </form>
                         <img class = "lines" src = "../static/images/line2.svg" alt = "">
@@ -59,6 +59,26 @@
                         <img class = "pieces" id = "piece8" src = "../static/images/piece8.svg" alt = "Piece of cake">
                     </button>
                 </p>
+            </section>
+            <br><br><br><br><br><br><br><br>
+            <section>
+                <h2>Input your recipe</h2>
+                <p>
+                    <form>
+                        <input class = "ing_button input_ing" list = "listid" type="textType" name="ing_rec" placeholder="Heavy cream">
+                        <input class = "ing_button input_ing" type="number" step = "0.1" name="ing_rec" placeholder="0g"><br>
+                        <input class = "ing_button input_ing" list = "listid" type="textType" name="ing_rec" placeholder="Heavy cream">
+                        <input class = "ing_button input_ing" type="number" step = "0.1" name="ing_rec" placeholder="0g"><br>
+                        <input class = "ing_button input_ing" list = "listid" type="textType" name="ing_rec" placeholder="Heavy cream">
+                        <input class = "ing_button input_ing" type="number" step = "0.1" name="ing_rec" placeholder="0g"><br>
+                        <datalist id = "listid">
+                            {% for i in ingred %}
+                                <option>{{i.title}}</option>
+                            {% endfor %}
+                        </datalist>
+                        <button class = "flavor_button">Submit</button><br>
+                    </form>
+                </p>    
             </section>
         </main>
         <script src="../static/script.js"></script> 
